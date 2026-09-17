@@ -10,8 +10,8 @@ Componente composto para criar seletores dropdown com suporte a grouping, scroll
 ## Basic Usage
 
 ```tsx
-import { Select } from 'awake-ui/select';
-import 'awake-ui/style.css';
+import { Select } from '@developmentsnil/awake-ui/select';
+import '@developmentsnil/awake-ui/style.css';
 
 <Select.Root>
   <Select.Label>Nome</Select.Label>
@@ -121,7 +121,10 @@ Exemplo completo mostrando todas as funcionalidades juntas.
 - `defaultValue` - Valor inicial selecionado
 - `value` - Valor controlado
 - `onValueChange` - Callback quando valor muda
+- `multiple` - Permite seleção múltipla
 - `disabled` - Desabilita o select
+- `required` - Torna a seleção obrigatória em formulários
+- `name` - Nome do campo ao submeter um formulário
 
 ### Select.Label
 

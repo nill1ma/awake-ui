@@ -5,11 +5,11 @@ import * as TableStories from './table.stories';
 
 # Table
 
-Componente composto (`Table.Root`, `Table.Head`, `Table.Body`, `Table.Row`, `Table.HeaderCell`, `Table.Cell`) para construir tabelas com header e corpo já conectados via acessibilidade nativa do Base UI.
+Componente composto (`Table.Root`, `Table.Head`, `Table.Body`, `Table.Row`, `Table.HeaderCell`, `Table.Cell`) para construir tabelas com elementos HTML semânticos nativos (`<table>`, `<thead>`, `<th>`, etc.), garantindo acessibilidade sem depender de nenhuma lógica adicional de JavaScript.
 
 ```tsx
-import { Table } from 'awake-ui/table';
-import 'awake-ui/style.css';
+import { Table } from '@developmentsnil/awake-ui/table';
+import '@developmentsnil/awake-ui/style.css';
 
 <Table.Root>
   <Table.Head>

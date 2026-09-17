@@ -4,13 +4,27 @@ import * as PaginationStories from './pagination.stories';
 <Meta of={PaginationStories} />
 
 # Pagination
-```tsx
 
-<Pagination
-   currentPage={1}
-   totalPages={10}
-   onPageChange={(page) => console.log(page)}
-/>
+```tsx
+import { Pagination } from '@developmentsnil/awake-ui/pagination';
+import '@developmentsnil/awake-ui/style.css';
+import { useState } from 'react';
+
+function MyComponent() {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  return (
+    <Pagination
+      currentPage={currentPage}
+      totalPages={10}
+      onPageChange={(page) => setCurrentPage(page)}
+    />
+  );
+}
 ```
 
 <Canvas of={PaginationStories.Default} />
+
+## Props
+
+<Controls />

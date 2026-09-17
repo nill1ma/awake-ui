@@ -26,12 +26,11 @@ __export(button_exports, {
 module.exports = __toCommonJS(button_exports);
 var import_clsx = require("clsx");
 var import_jsx_runtime = require("react/jsx-runtime");
-function Button({ children, variant = "primary", className, onClick, ...props }) {
+function Button({ children, variant = "primary", className, ...props }) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     "button",
     {
       ...props,
-      onClick,
       className: (0, import_clsx.clsx)("awake-button", `awake-button--${variant}`, className),
       children
     }
