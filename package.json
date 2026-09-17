@@ -39,6 +39,11 @@
       "import": "./dist/pagination.js",
       "require": "./dist/pagination.cjs"
     },
+    "./select": {
+      "types": "./dist/select.d.ts",
+      "import": "./dist/select.js",
+      "require": "./dist/select.cjs"
+    },
     "./style.css": "./dist/style.css"
   },
   "scripts": {

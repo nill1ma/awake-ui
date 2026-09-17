@@ -1,0 +1,46 @@
+import * as react from 'react';
+import { ComponentProps } from 'react';
+import { Select as Select$1 } from '@base-ui/react/select';
+
+declare function Root(props: ComponentProps<typeof Select$1.Root>): react.JSX.Element;
+declare function Label(props: ComponentProps<typeof Select$1.Label>): react.JSX.Element;
+declare function Trigger(props: ComponentProps<typeof Select$1.Trigger>): react.JSX.Element;
+declare function Value(props: ComponentProps<typeof Select$1.Value>): react.JSX.Element;
+declare function Icon(props: ComponentProps<typeof Select$1.Icon>): react.JSX.Element;
+declare function Portal(props: ComponentProps<typeof Select$1.Portal>): react.JSX.Element;
+declare function Positioner(props: ComponentProps<typeof Select$1.Positioner>): react.JSX.Element;
+declare function Popup(props: ComponentProps<typeof Select$1.Popup>): react.JSX.Element;
+declare function List(props: ComponentProps<typeof Select$1.List>): react.JSX.Element;
+declare function Item(props: ComponentProps<typeof Select$1.Item>): react.JSX.Element;
+declare function ItemText(props: ComponentProps<typeof Select$1.ItemText>): react.JSX.Element;
+declare function ItemIndicator(props: ComponentProps<typeof Select$1.ItemIndicator>): react.JSX.Element;
+declare function Backdrop(props: ComponentProps<typeof Select$1.Backdrop>): react.JSX.Element;
+declare function Arrow(props: ComponentProps<typeof Select$1.Arrow>): react.JSX.Element;
+declare function ScrollUpArrow(props: ComponentProps<typeof Select$1.ScrollUpArrow>): react.JSX.Element;
+declare function ScrollDownArrow(props: ComponentProps<typeof Select$1.ScrollDownArrow>): react.JSX.Element;
+declare function Separator(props: ComponentProps<typeof Select$1.Separator>): react.JSX.Element;
+declare function Group(props: ComponentProps<typeof Select$1.Group>): react.JSX.Element;
+declare function GroupLabel(props: ComponentProps<typeof Select$1.GroupLabel>): react.JSX.Element;
+declare const Select: {
+    Root: typeof Root;
+    Label: typeof Label;
+    Trigger: typeof Trigger;
+    Value: typeof Value;
+    Icon: typeof Icon;
+    Portal: typeof Portal;
+    Positioner: typeof Positioner;
+    Popup: typeof Popup;
+    List: typeof List;
+    Item: typeof Item;
+    ItemText: typeof ItemText;
+    ItemIndicator: typeof ItemIndicator;
+    Backdrop: typeof Backdrop;
+    Arrow: typeof Arrow;
+    ScrollUpArrow: typeof ScrollUpArrow;
+    ScrollDownArrow: typeof ScrollDownArrow;
+    Separator: typeof Separator;
+    Group: typeof Group;
+    GroupLabel: typeof GroupLabel;
+};
+
+export { Select };

@@ -1,7 +1,7 @@
 "use client";
 import {
   Button
-} from "./chunk-X4DR53Q7.js";
+} from "./chunk-MN4SY234.js";
 
 // src/pagination/index.tsx
 import { clsx } from "clsx";

@@ -4,6 +4,7 @@ import { Field } from 'awake-ui/field';
 import { Pagination } from 'awake-ui/pagination';
 import * as Table from 'awake-ui/table';
 import { Separator } from 'awake-ui/separator';
+import { Select } from 'awake-ui/select';
 import 'awake-ui/style.css'; 
 import './App.css';
 import { useState } from 'react';
@@ -47,6 +48,59 @@ function App() {
         <Separator className='awake-separator-custom' orientation='vertical' />
         <Button className='ml-4 w-10' variant="secondary">Secundário</Button>
       </div>
+      <Select.Root>
+  <Select.Label>Choose an option</Select.Label>
+  <Select.Trigger>
+    <Select.Value placeholder="Selecione" />
+    <Select.Icon>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M11 10H5l3 3.5zm0-4H5l3-3.5z" />
+      </svg>
+    </Select.Icon>
+  </Select.Trigger>
+  <Select.Portal>
+    <Select.Backdrop />
+    <Select.Positioner>
+      <Select.Popup>
+        <Select.ScrollUpArrow>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12 10H4l4-4.5z" />
+          </svg>
+        </Select.ScrollUpArrow>
+        <Select.List>
+          <Select.Group>
+            <Select.GroupLabel>Fruits</Select.GroupLabel>
+            <Select.Item value="apple">
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Apple</Select.ItemText>
+            </Select.Item>
+            <Select.Item value="banana">
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Banana</Select.ItemText>
+            </Select.Item>
+          </Select.Group>
+          <Select.Separator />
+          <Select.Group>
+            <Select.GroupLabel>Vegetables</Select.GroupLabel>
+            <Select.Item value="carrot">
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Carrot</Select.ItemText>
+            </Select.Item>
+            <Select.Item value="broccoli">
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Broccoli</Select.ItemText>
+            </Select.Item>
+          </Select.Group>
+        </Select.List>
+        <Select.ScrollDownArrow>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12 6H4l4 4.5z" />
+          </svg>
+        </Select.ScrollDownArrow>
+      </Select.Popup>
+    </Select.Positioner>
+  </Select.Portal>
+</Select.Root>
     </>
   )
 }
