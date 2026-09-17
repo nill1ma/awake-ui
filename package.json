@@ -5,7 +5,8 @@
   "sideEffects": false,
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "exports": {
     "./button": {
