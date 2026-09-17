@@ -100,3 +100,118 @@ import * as Table from '@developmentsnil/awake-ui/table';
   </Table.Body>
 </Table.Root>
 ```
+
+### Select
+
+```tsx
+import { Select } from '@developmentsnil/awake-ui/select';
+
+// Basic usage
+<Select.Root>
+  <Select.Label>Choose an option</Select.Label>
+  <Select.Trigger>
+    <Select.Value placeholder="Select" />
+    <Select.Icon>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M11 10H5l3 3.5zm0-4H5l3-3.5z" />
+      </svg>
+    </Select.Icon>
+  </Select.Trigger>
+  <Select.Portal>
+    <Select.Backdrop />
+    <Select.Positioner>
+      <Select.Popup>
+        <Select.List>
+          <Select.Item value="1">
+            <Select.ItemIndicator>✓</Select.ItemIndicator>
+            <Select.ItemText>Option 1</Select.ItemText>
+          </Select.Item>
+          <Select.Item value="2">
+            <Select.ItemIndicator>✓</Select.ItemIndicator>
+            <Select.ItemText>Option 2</Select.ItemText>
+          </Select.Item>
+        </Select.List>
+      </Select.Popup>
+    </Select.Positioner>
+  </Select.Portal>
+</Select.Root>
+
+// With groups and separators
+<Select.Root>
+  <Select.Label>Choose a category</Select.Label>
+  <Select.Trigger>
+    <Select.Value placeholder="Select" />
+    <Select.Icon>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M11 10H5l3 3.5zm0-4H5l3-3.5z" />
+      </svg>
+    </Select.Icon>
+  </Select.Trigger>
+  <Select.Portal>
+    <Select.Backdrop />
+    <Select.Positioner>
+      <Select.Popup>
+        <Select.List>
+          <Select.Group>
+            <Select.GroupLabel>Fruits</Select.GroupLabel>
+            <Select.Item value="apple">
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Apple</Select.ItemText>
+            </Select.Item>
+            <Select.Item value="banana">
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Banana</Select.ItemText>
+            </Select.Item>
+          </Select.Group>
+          <Select.Separator />
+          <Select.Group>
+            <Select.GroupLabel>Vegetables</Select.GroupLabel>
+            <Select.Item value="carrot">
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Carrot</Select.ItemText>
+            </Select.Item>
+          </Select.Group>
+        </Select.List>
+      </Select.Popup>
+    </Select.Positioner>
+  </Select.Portal>
+</Select.Root>
+
+// With scroll arrows for long lists
+<Select.Root>
+  <Select.Label>Choose a number</Select.Label>
+  <Select.Trigger>
+    <Select.Value placeholder="Select" />
+    <Select.Icon>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M11 10H5l3 3.5zm0-4H5l3-3.5z" />
+      </svg>
+    </Select.Icon>
+  </Select.Trigger>
+  <Select.Portal>
+    <Select.Backdrop />
+    <Select.Positioner>
+      <Select.Popup>
+        <Select.ScrollUpArrow>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12 10H4l4-4.5z" />
+          </svg>
+        </Select.ScrollUpArrow>
+        <Select.List>
+          {Array.from({ length: 20 }, (_, i) => (
+            <Select.Item key={i} value={String(i + 1)}>
+              <Select.ItemIndicator>✓</Select.ItemIndicator>
+              <Select.ItemText>Option {i + 1}</Select.ItemText>
+            </Select.Item>
+          ))}
+        </Select.List>
+        <Select.ScrollDownArrow>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12 6H4l4 4.5z" />
+          </svg>
+        </Select.ScrollDownArrow>
+      </Select.Popup>
+    </Select.Positioner>
+  </Select.Portal>
+</Select.Root>
+```
