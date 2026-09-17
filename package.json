@@ -33,6 +33,11 @@
       "import": "./dist/table.js",
       "require": "./dist/table.cjs"
     },
+    "./pagination": {
+      "types": "./dist/pagination.d.ts",
+      "import": "./dist/pagination.js",
+      "require": "./dist/pagination.cjs"
+    },
     "./style.css": "./dist/style.css"
   },
   "scripts": {

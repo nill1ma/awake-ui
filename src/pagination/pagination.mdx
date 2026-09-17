@@ -1,0 +1,16 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as PaginationStories from './pagination.stories';
+
+<Meta of={PaginationStories} />
+
+# Pagination
+```tsx
+
+<Pagination
+   currentPage={1}
+   totalPages={10}
+   onPageChange={(page) => console.log(page)}
+/>
+```
+
+<Canvas of={PaginationStories.Default} />

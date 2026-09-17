@@ -1,15 +1,19 @@
 import { Button } from 'woken-ui/button';
 import { Dialog } from 'woken-ui/dialog';
 import { Field } from 'woken-ui/field';
+import { Pagination } from 'woken-ui/pagination';
 import * as Table from 'woken-ui/table';
 import { Separator } from 'woken-ui/separator';
 import 'woken-ui/style.css'; 
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [currentPage, setCurrentPage] = useState(1);
   return (
     <>
-    <Table.Root>
+    <Table.Root style={{width:'50%', border: '1px solid black'}}>
       <Table.Head>
         <Table.Row>
           <Table.HeaderCell>Header 1</Table.HeaderCell>
@@ -23,6 +27,7 @@ function App() {
         </Table.Row>
       </Table.Body>
     </Table.Root>
+    <Pagination currentPage={currentPage} totalPages={10} onPageChange={(page) => setCurrentPage(page)} />
     <Dialog.Root>
       <Dialog.Trigger>Abrir</Dialog.Trigger>
       <Dialog.Portal>

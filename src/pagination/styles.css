@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.woken-pagination {
+  @apply flex items-center justify-between gap-4 mt-4;
+}
+
+.woken-pagination-info {
+  @apply text-sm text-woken-neutral-600;
+}

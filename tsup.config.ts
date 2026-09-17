@@ -7,6 +7,7 @@ export default defineConfig({
     field: 'src/field/index.tsx',
     separator: 'src/separator/index.tsx',
     table: 'src/table/index.tsx',
+    pagination: 'src/pagination/index.tsx',
   },
   format: ['cjs', 'esm'],
   dts: true,
