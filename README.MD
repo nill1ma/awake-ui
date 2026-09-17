@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm install awake-ui
+npm install @developmentsnil/awake-ui
 ```
 
 ## Usage
@@ -11,13 +11,13 @@ npm install awake-ui
 Import the CSS once in your application root:
 
 ```tsx
-import 'awake-ui/style.css';
+import '@developmentsnil/awake-ui/style.css';
 ```
 
 ### Button
 
 ```tsx
-import { Button } from 'awake-ui/button';
+import { Button } from '@developmentsnil/awake-ui/button';
 
 <Button variant="primary">Primary Button</Button>
 <Button variant="secondary">Secondary Button</Button>
@@ -26,7 +26,7 @@ import { Button } from 'awake-ui/button';
 ### Dialog
 
 ```tsx
-import { Dialog } from 'awake-ui/dialog';
+import { Dialog } from '@developmentsnil/awake-ui/dialog';
 
 <Dialog.Root>
   <Dialog.Trigger>Open Dialog</Dialog.Trigger>
@@ -44,7 +44,7 @@ import { Dialog } from 'awake-ui/dialog';
 ### Field
 
 ```tsx
-import { Field } from 'awake-ui/field';
+import { Field } from '@developmentsnil/awake-ui/field';
 
 <Field.Root>
   <Field.Label>Email</Field.Label>
@@ -55,7 +55,7 @@ import { Field } from 'awake-ui/field';
 ### Pagination
 
 ```tsx
-import { Pagination } from 'awake-ui/pagination';
+import { Pagination } from '@developmentsnil/awake-ui/pagination';
 import { useState } from 'react';
 
 function MyComponent() {
@@ -74,7 +74,7 @@ function MyComponent() {
 ### Separator
 
 ```tsx
-import { Separator } from 'awake-ui/separator';
+import { Separator } from '@developmentsnil/awake-ui/separator';
 
 <Separator /> {/* Horizontal */}
 <Separator orientation="vertical" /> {/* Vertical */}
@@ -83,7 +83,7 @@ import { Separator } from 'awake-ui/separator';
 ### Table
 
 ```tsx
-import * as Table from 'awake-ui/table';
+import * as Table from '@developmentsnil/awake-ui/table';
 
 <Table.Root>
   <Table.Head>
