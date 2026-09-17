@@ -42,7 +42,7 @@ module.exports = __toCommonJS(table_exports);
 var import_clsx = __toESM(require("clsx"), 1);
 var import_jsx_runtime = require("react/jsx-runtime");
 function Root({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "table-wrapper", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("table", { className: (0, import_clsx.default)("woken-table", className), ...props }) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "table-wrapper", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("table", { className: (0, import_clsx.default)("awake-table", className), ...props }) });
 }
 function Head({ className, ...props }) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { className: (0, import_clsx.default)("table-head", className), ...props });

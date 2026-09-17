@@ -1,13 +1,13 @@
 ## Instalação
 
 ​```bash
-npm install woken-ui
+npm install awake-ui
 ​```
 
 Importe o CSS uma vez na raiz da sua aplicação:
 
 ​```tsx
-import 'woken-ui/style.css';
+import 'awake-ui/style.css';
 ​```
 
 

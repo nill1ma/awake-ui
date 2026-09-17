@@ -31,7 +31,7 @@ function Button({ children, variant = "primary", className, ...props }) {
     "button",
     {
       ...props,
-      className: (0, import_clsx.clsx)("woken-button", `woken-button--${variant}`, className),
+      className: (0, import_clsx.clsx)("awake-button", `awake-button--${variant}`, className),
       children
     }
   );

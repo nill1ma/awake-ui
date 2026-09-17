@@ -34,7 +34,7 @@ function Button({ children, variant = "primary", className, ...props }) {
     "button",
     {
       ...props,
-      className: (0, import_clsx.clsx)("woken-button", `woken-button--${variant}`, className),
+      className: (0, import_clsx.clsx)("awake-button", `awake-button--${variant}`, className),
       children
     }
   );
@@ -53,7 +53,7 @@ function Pagination({
     "nav",
     {
       "aria-label": "Pagina\xE7\xE3o",
-      className: (0, import_clsx2.clsx)("woken-pagination", className),
+      className: (0, import_clsx2.clsx)("awake-pagination", className),
       ...props,
       children: [
         /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
@@ -66,7 +66,7 @@ function Pagination({
             children: "Previous"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("span", { className: "woken-pagination-info", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("span", { className: "awake-pagination-info", children: [
           "Page ",
           currentPage,
           " of ",

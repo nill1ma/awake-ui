@@ -6,7 +6,7 @@ import clsx from 'clsx';
 function Root({ className, ...props }: ComponentPropsWithoutRef<'table'>) {
   return (
     <div className="table-wrapper">
-      <table className={clsx('woken-table', className)} {...props} />
+      <table className={clsx('awake-table', className)} {...props} />
     </div>
   );
 }

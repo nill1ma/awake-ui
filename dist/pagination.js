@@ -1,7 +1,7 @@
 "use client";
 import {
   Button
-} from "./chunk-EUYY7CPI.js";
+} from "./chunk-X4DR53Q7.js";
 
 // src/pagination/index.tsx
 import { clsx } from "clsx";
@@ -17,7 +17,7 @@ function Pagination({
     "nav",
     {
       "aria-label": "Pagina\xE7\xE3o",
-      className: clsx("woken-pagination", className),
+      className: clsx("awake-pagination", className),
       ...props,
       children: [
         /* @__PURE__ */ jsx(
@@ -30,7 +30,7 @@ function Pagination({
             children: "Previous"
           }
         ),
-        /* @__PURE__ */ jsxs("span", { className: "woken-pagination-info", children: [
+        /* @__PURE__ */ jsxs("span", { className: "awake-pagination-info", children: [
           "Page ",
           currentPage,
           " of ",

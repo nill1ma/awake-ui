@@ -8,22 +8,22 @@ function Root(props) {
   return /* @__PURE__ */ jsx(BaseUIDialog.Root, { ...props });
 }
 function Trigger({ className, ...props }) {
-  return /* @__PURE__ */ jsx(BaseUIDialog.Trigger, { className: clsx("woken-dialog-trigger", className), ...props });
+  return /* @__PURE__ */ jsx(BaseUIDialog.Trigger, { className: clsx("awake-dialog-trigger", className), ...props });
 }
 function Backdrop({ className, ...props }) {
-  return /* @__PURE__ */ jsx(BaseUIDialog.Backdrop, { className: clsx("woken-dialog-backdrop", className), ...props });
+  return /* @__PURE__ */ jsx(BaseUIDialog.Backdrop, { className: clsx("awake-dialog-backdrop", className), ...props });
 }
 function Popup({ className, ...props }) {
-  return /* @__PURE__ */ jsx(BaseUIDialog.Popup, { className: clsx("woken-dialog-popup", className), ...props });
+  return /* @__PURE__ */ jsx(BaseUIDialog.Popup, { className: clsx("awake-dialog-popup", className), ...props });
 }
 function Title({ className, ...props }) {
-  return /* @__PURE__ */ jsx(BaseUIDialog.Title, { className: clsx("woken-dialog-title", className), ...props });
+  return /* @__PURE__ */ jsx(BaseUIDialog.Title, { className: clsx("awake-dialog-title", className), ...props });
 }
 function Description({ className, ...props }) {
-  return /* @__PURE__ */ jsx(BaseUIDialog.Description, { className: clsx("woken-dialog-description", className), ...props });
+  return /* @__PURE__ */ jsx(BaseUIDialog.Description, { className: clsx("awake-dialog-description", className), ...props });
 }
 function Close({ className, ...props }) {
-  return /* @__PURE__ */ jsx(BaseUIDialog.Close, { className: clsx("woken-dialog-close", className), ...props });
+  return /* @__PURE__ */ jsx(BaseUIDialog.Close, { className: clsx("awake-dialog-close", className), ...props });
 }
 var Dialog = {
   Root,

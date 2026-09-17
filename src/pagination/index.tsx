@@ -20,7 +20,7 @@ export function Pagination({
   return (
     <nav
       aria-label="Paginação"
-      className={clsx('woken-pagination', className)}
+      className={clsx('awake-pagination', className)}
       {...props}
     >
       <Button
@@ -32,7 +32,7 @@ export function Pagination({
         Previous
       </Button>
 
-      <span className="woken-pagination-info">
+      <span className="awake-pagination-info">
         Page {currentPage} of {totalPages}
       </span>
 

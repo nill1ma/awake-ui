@@ -1,10 +1,10 @@
-import { Button } from 'woken-ui/button';
-import { Dialog } from 'woken-ui/dialog';
-import { Field } from 'woken-ui/field';
-import { Pagination } from 'woken-ui/pagination';
-import * as Table from 'woken-ui/table';
-import { Separator } from 'woken-ui/separator';
-import 'woken-ui/style.css'; 
+import { Button } from 'awake-ui/button';
+import { Dialog } from 'awake-ui/dialog';
+import { Field } from 'awake-ui/field';
+import { Pagination } from 'awake-ui/pagination';
+import * as Table from 'awake-ui/table';
+import { Separator } from 'awake-ui/separator';
+import 'awake-ui/style.css'; 
 import './App.css';
 import { useState } from 'react';
 
@@ -44,7 +44,7 @@ function App() {
       </Field.Root>
       <div style={{ display: 'flex', gap: '16px' }}>
         <Button className='ml-4 w-10 text-cyan-800' variant="primary">Primário</Button>
-        <Separator className='woken-separator-custom' orientation='vertical' />
+        <Separator className='awake-separator-custom' orientation='vertical' />
         <Button className='ml-4 w-10' variant="secondary">Secundário</Button>
       </div>
     </>

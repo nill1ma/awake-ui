@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
-.woken-dialog-trigger {
+.awake-dialog-trigger {
   @apply px-4 py-2 rounded-md font-medium transition-colors;
-  @apply bg-woken-primary-500 hover:bg-woken-primary-600 text-white;
-  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-woken-primary-500;
+  @apply bg-awake-primary-500 hover:bg-awake-primary-600 text-white;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-awake-primary-500;
 }
 
-.woken-dialog-backdrop {
-  @apply fixed inset-0 bg-woken-neutral-900/50;
+.awake-dialog-backdrop {
+  @apply fixed inset-0 bg-awake-neutral-900/50;
   @apply transition-opacity duration-150;
   @apply data-[starting-style]:opacity-0 data-[ending-style]:opacity-0;
 }
 
-.woken-dialog-popup {
+.awake-dialog-popup {
   @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
   @apply bg-white rounded-lg shadow-xl p-6 w-full max-w-md;
   @apply transition-all duration-150;
@@ -20,16 +20,16 @@
   @apply data-[ending-style]:opacity-0 data-[ending-style]:scale-95;
 }
 
-.woken-dialog-title {
-  @apply text-lg font-semibold text-woken-neutral-900 mb-2;
+.awake-dialog-title {
+  @apply text-lg font-semibold text-awake-neutral-900 mb-2;
 }
 
-.woken-dialog-description {
-  @apply text-sm text-woken-neutral-600 mb-4;
+.awake-dialog-description {
+  @apply text-sm text-awake-neutral-600 mb-4;
 }
 
-.woken-dialog-close {
+.awake-dialog-close {
   @apply px-4 py-2 rounded-md font-medium transition-colors;
-  @apply bg-woken-neutral-200 hover:bg-woken-neutral-300 text-woken-neutral-900;
-  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-woken-primary-500;
+  @apply bg-awake-neutral-200 hover:bg-awake-neutral-300 text-awake-neutral-900;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-awake-primary-500;
 }

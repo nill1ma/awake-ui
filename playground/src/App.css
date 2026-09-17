@@ -1,6 +1,6 @@
 
 @import "tailwindcss";
 
-.woken-separator-custom {
+.awake-separator-custom {
   @apply bg-amber-900 w-10;
 }

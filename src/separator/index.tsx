@@ -10,5 +10,5 @@ export type SeparatorProps = ComponentPropsWithoutRef<typeof BaseUISeparator> & 
 };
 
 export function Separator({ orientation = 'horizontal', className, ...props }: SeparatorProps) {
-  return <BaseUISeparator orientation={orientation} className={clsx('woken-separator', className)} {...props} />;
+  return <BaseUISeparator orientation={orientation} className={clsx('awake-separator', className)} {...props} />;
 }

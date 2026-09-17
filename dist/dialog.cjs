@@ -31,22 +31,22 @@ function Root(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Root, { ...props });
 }
 function Trigger({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Trigger, { className: (0, import_clsx.clsx)("woken-dialog-trigger", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Trigger, { className: (0, import_clsx.clsx)("awake-dialog-trigger", className), ...props });
 }
 function Backdrop({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Backdrop, { className: (0, import_clsx.clsx)("woken-dialog-backdrop", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Backdrop, { className: (0, import_clsx.clsx)("awake-dialog-backdrop", className), ...props });
 }
 function Popup({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Popup, { className: (0, import_clsx.clsx)("woken-dialog-popup", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Popup, { className: (0, import_clsx.clsx)("awake-dialog-popup", className), ...props });
 }
 function Title({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Title, { className: (0, import_clsx.clsx)("woken-dialog-title", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Title, { className: (0, import_clsx.clsx)("awake-dialog-title", className), ...props });
 }
 function Description({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Description, { className: (0, import_clsx.clsx)("woken-dialog-description", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Description, { className: (0, import_clsx.clsx)("awake-dialog-description", className), ...props });
 }
 function Close({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Close, { className: (0, import_clsx.clsx)("woken-dialog-close", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_dialog.Dialog.Close, { className: (0, import_clsx.clsx)("awake-dialog-close", className), ...props });
 }
 var Dialog = {
   Root,

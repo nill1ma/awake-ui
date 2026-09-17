@@ -4,7 +4,7 @@
 import clsx from "clsx";
 import { jsx } from "react/jsx-runtime";
 function Root({ className, ...props }) {
-  return /* @__PURE__ */ jsx("div", { className: "table-wrapper", children: /* @__PURE__ */ jsx("table", { className: clsx("woken-table", className), ...props }) });
+  return /* @__PURE__ */ jsx("div", { className: "table-wrapper", children: /* @__PURE__ */ jsx("table", { className: clsx("awake-table", className), ...props }) });
 }
 function Head({ className, ...props }) {
   return /* @__PURE__ */ jsx("thead", { className: clsx("table-head", className), ...props });

@@ -28,7 +28,7 @@ var import_separator = require("@base-ui/react/separator");
 var import_clsx = require("clsx");
 var import_jsx_runtime = require("react/jsx-runtime");
 function Separator({ orientation = "horizontal", className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_separator.Separator, { orientation, className: (0, import_clsx.clsx)("woken-separator", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_separator.Separator, { orientation, className: (0, import_clsx.clsx)("awake-separator", className), ...props });
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

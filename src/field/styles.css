@@ -5,12 +5,12 @@
 }
 
 .field-label {
-  @apply text-sm font-medium text-woken-neutral-900;
-  @apply data-[disabled]:text-woken-neutral-400;
+  @apply text-sm font-medium text-awake-neutral-900;
+  @apply data-[disabled]:text-awake-neutral-400;
 }
 
 .field-control {
-  @apply h-10 w-full rounded-md border border-woken-neutral-200 px-3.5 text-base text-woken-neutral-900;
-  @apply focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-woken-primary-500;
-  @apply data-[invalid]:border-woken-error data-[invalid]:outline-woken-error;
+  @apply h-10 w-full rounded-md border border-awake-neutral-200 px-3.5 text-base text-awake-neutral-900;
+  @apply focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-awake-primary-500;
+  @apply data-[invalid]:border-awake-error data-[invalid]:outline-awake-error;
 }

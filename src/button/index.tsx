@@ -11,7 +11,7 @@ export function Button({ children, variant = 'primary', className, ...props }: B
   return (
     <button
       {...props}
-      className={clsx('woken-button', `woken-button--${variant}`, className)}
+      className={clsx('awake-button', `awake-button--${variant}`, className)}
     >
       {children}
     </button>
