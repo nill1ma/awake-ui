@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.field-root {
+  @apply flex flex-col gap-1;
+}
+
+.field-label {
+  @apply text-sm font-medium text-woken-neutral-900;
+  @apply data-[disabled]:text-woken-neutral-400;
+}
+
+.field-control {
+  @apply h-10 w-full rounded-md border border-woken-neutral-200 px-3.5 text-base text-woken-neutral-900;
+  @apply focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-woken-primary-500;
+  @apply data-[invalid]:border-woken-error data-[invalid]:outline-woken-error;
+}

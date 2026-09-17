@@ -1,0 +1,25 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button
+
+```tsx
+import { Button } from 'woken-ui/button';
+import 'woken-ui/style.css';
+
+<Button variant="primary">Clique aqui</Button>
+```
+<Canvas of={ButtonStories.Primary} />
+```tsx
+import { Button } from 'woken-ui/button';
+import 'woken-ui/style.css';
+
+<Button variant="secondary">Clique aqui</Button>
+```
+<Canvas of={ButtonStories.Secondary} />
+
+## Props
+
+<Controls />

@@ -1,0 +1,16 @@
+import { defineConfig } from 'tsup';
+
+export default defineConfig({
+  entry: {
+    button: 'src/button/index.tsx',
+    dialog: 'src/dialog/index.tsx',
+    field: 'src/field/index.tsx',
+    separator: 'src/separator/index.tsx',
+    table: 'src/table/index.tsx',
+  },
+  format: ['cjs', 'esm'],
+  dts: true,
+  external: ['react', 'react-dom'],
+  sourcemap: true,
+  clean: false,
+});

@@ -1,0 +1,6 @@
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+packages:
+  - '.'
+  - 'playground'

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+@import "./button/styles.css";
+@import "./dialog/styles.css";
+@import "./field/styles.css";
+@import "./separator/styles.css";
+@import "./table/styles.css";
+
+

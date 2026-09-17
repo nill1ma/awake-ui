@@ -1,0 +1,30 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import * as TableStories from './table.stories';
+
+<Meta of={TableStories} />
+
+# Table
+
+Componente composto (`Table.Root`, `Table.Head`, `Table.Body`, `Table.Row`, `Table.HeaderCell`, `Table.Cell`) para construir tabelas com header e corpo já conectados via acessibilidade nativa do Base UI.
+
+```tsx
+import { Table } from 'woken-ui/table';
+import 'woken-ui/style.css';
+
+<Table.Root>
+  <Table.Head>
+    <Table.Row>
+      <Table.HeaderCell>Nome</Table.HeaderCell>
+      <Table.HeaderCell>Email</Table.HeaderCell>
+    </Table.Row>
+  </Table.Head>
+  <Table.Body>
+    <Table.Row>
+      <Table.Cell>John Doe</Table.Cell>
+      <Table.Cell>john.doe@example.com</Table.Cell>
+    </Table.Row>
+  </Table.Body>
+</Table.Root>
+```
+
+<Canvas of={TableStories.Default} />

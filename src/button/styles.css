@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.woken-button {
+  @apply px-4 py-2 rounded-md font-medium transition-colors;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-woken-primary-500;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.woken-button--primary {
+  @apply bg-woken-primary-500 hover:bg-woken-primary-600 text-white;
+}
+
+.woken-button--secondary {
+  @apply bg-woken-neutral-200 hover:bg-woken-neutral-300 text-woken-neutral-900;
+}

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.woken-separator[data-orientation="horizontal"] {
+  @apply h-px w-full bg-woken-accent-600;
+}
+
+.woken-separator[data-orientation="vertical"] {
+  @apply w-px h-25 self-stretch bg-woken-accent-600;
+}

@@ -1,0 +1,23 @@
+.table-wrapper {
+  @apply overflow-x-auto w-full;
+}
+
+.woken-table {
+  @apply w-full border-collapse text-sm;
+}
+
+.table-head {
+  @apply border-b border-woken-neutral-200;
+}
+
+.table-header-cell {
+  @apply text-left font-medium text-woken-neutral-700 px-4 py-2;
+}
+
+.table-row {
+  @apply border-b border-woken-neutral-100 hover:bg-woken-neutral-50;
+}
+
+.table-cell {
+  @apply px-4 py-2 text-woken-neutral-900;
+}

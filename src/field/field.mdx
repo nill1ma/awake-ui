@@ -1,0 +1,42 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import * as FieldStories from './field.stories';
+
+<Meta of={FieldStories} />
+
+# Field
+
+Componente composto (`Field.Root`, `Field.Label`, `Field.Control`) para construir campos de formulário com label e input já conectados via acessibilidade nativa do Base UI.
+
+```tsx
+import { Field } from 'woken-ui/field';
+import 'woken-ui/style.css';
+
+<Field.Root>
+  <Field.Label>Nome</Field.Label>
+  <Field.Control placeholder="Digite seu nome" />
+</Field.Root>
+```
+
+<Canvas of={FieldStories.Default} />
+
+## Desabilitado
+
+```tsx
+<Field.Root disabled>
+  <Field.Label>Nome</Field.Label>
+  <Field.Control placeholder="Digite seu nome" />
+</Field.Root>
+```
+
+<Canvas of={FieldStories.Disabled} />
+
+## Com erro de validação
+
+```tsx
+<Field.Root invalid>
+  <Field.Label>Email</Field.Label>
+  <Field.Control type="email" placeholder="seuemail@exemplo.com" />
+</Field.Root>
+```
+
+<Canvas of={FieldStories.Invalid} />
