@@ -10,7 +10,8 @@ export default defineConfig({
     pagination: 'src/pagination/index.tsx',
     select: 'src/select/index.tsx',
     switch: 'src/switch/index.tsx',
-    loading: 'src/loading/index.tsx'
+    loading: 'src/loading/index.tsx',
+    tooltip: 'src/tooltip/index.tsx'
   },
   format: ['cjs', 'esm'],
   dts: true,

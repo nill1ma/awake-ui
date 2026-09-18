@@ -258,3 +258,75 @@ import { Loading } from '@developmentsnil/awake-ui/loading';
 
 <Loading />
 ```
+
+### Tooltip
+
+```tsx
+import { Tooltip } from '@developmentsnil/awake-ui/tooltip';
+
+// Basic usage
+<Tooltip.Provider>
+  <Tooltip.Root>
+    <Tooltip.Trigger aria-label="Tooltip trigger">
+      <button>Hover me</button>
+    </Tooltip.Trigger>
+    <Tooltip.Portal>
+      <Tooltip.Positioner>
+        <Tooltip.Popup>
+          <Tooltip.Arrow />
+          Tooltip content
+        </Tooltip.Popup>
+      </Tooltip.Positioner>
+    </Tooltip.Portal>
+  </Tooltip.Root>
+</Tooltip.Provider>
+
+// With positioning
+<Tooltip.Provider>
+  <Tooltip.Root>
+    <Tooltip.Trigger aria-label="Top tooltip">
+      <button>Top</button>
+    </Tooltip.Trigger>
+    <Tooltip.Portal>
+      <Tooltip.Positioner side="top">
+        <Tooltip.Popup>
+          <Tooltip.Arrow />
+          Tooltip on top
+        </Tooltip.Popup>
+      </Tooltip.Positioner>
+    </Tooltip.Portal>
+  </Tooltip.Root>
+</Tooltip.Provider>
+
+// Multiple tooltips
+<Tooltip.Provider>
+  <div style={{ display: 'flex', gap: '16px' }}>
+    <Tooltip.Root>
+      <Tooltip.Trigger aria-label="Bold">
+        <button>Bold</button>
+      </Tooltip.Trigger>
+      <Tooltip.Portal>
+        <Tooltip.Positioner>
+          <Tooltip.Popup>
+            <Tooltip.Arrow />
+            Bold text
+          </Tooltip.Popup>
+        </Tooltip.Positioner>
+      </Tooltip.Portal>
+    </Tooltip.Root>
+    <Tooltip.Root>
+      <Tooltip.Trigger aria-label="Italic">
+        <button>Italic</button>
+      </Tooltip.Trigger>
+      <Tooltip.Portal>
+        <Tooltip.Positioner>
+          <Tooltip.Popup>
+            <Tooltip.Arrow />
+            Italic text
+          </Tooltip.Popup>
+        </Tooltip.Positioner>
+      </Tooltip.Portal>
+    </Tooltip.Root>
+  </div>
+</Tooltip.Provider>
+```

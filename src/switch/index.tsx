@@ -1,8 +1,7 @@
 'use client';
 
+import { Switch as BaseUISwitch } from '@base-ui/react/switch';
 import { ComponentPropsWithoutRef } from 'react';
-import { clsx } from 'clsx';
-import {Switch as BaseUISwitch} from '@base-ui/react/switch'
 export type SwitchProps = ComponentPropsWithoutRef<typeof BaseUISwitch.Root> & {
   checked?: boolean;
   onCheckedChange?: (checked: boolean) => void;
