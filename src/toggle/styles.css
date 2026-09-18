@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.toggle-switch {
+  @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ease-in-out;
+  @apply bg-awake-neutral-300 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-awake-primary-500;
+}
+
+.toggle-switch--checked {
+  @apply bg-awake-primary-500;
+}
+
+.toggle-switch--disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.toggle-switch-thumb {
+  @apply inline-block h-4 w-4 transform rounded-full bg-white shadow transition-transform duration-200 ease-in-out;
+  @apply translate-x-1;
+}
+
+.toggle-switch--checked .toggle-switch-thumb {
+  @apply translate-x-6;
+}

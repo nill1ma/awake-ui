@@ -1,6 +1,6 @@
 {
   "name": "@developmentsnil/awake-ui",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
   "sideEffects": false,
   "type": "module",
@@ -43,6 +43,11 @@
       "types": "./dist/select.d.ts",
       "import": "./dist/select.js",
       "require": "./dist/select.cjs"
+    },
+    "./toggle": {
+      "types": "./dist/toggle.d.ts",
+      "import": "./dist/toggle.js",
+      "require": "./dist/toggle.cjs"
     },
     "./style.css": "./dist/style.css"
   },

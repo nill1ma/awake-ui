@@ -19,7 +19,7 @@
   --color-awake-accent-500: #f97316;
   --color-awake-accent-600: #ea580c;
 
-  /* Neutros — cinza azulado */
+  /* Neutros — cinza azulado (light mode) */
   --color-awake-neutral-50: #f8fafc;
   --color-awake-neutral-100: #f1f5f9;
   --color-awake-neutral-200: #e2e8f0;
@@ -31,8 +31,35 @@
   --color-awake-neutral-800: #1e293b;
   --color-awake-neutral-900: #0f172a;
 
+  /* Neutros — cinza azulado (dark mode) */
+  --color-awake-neutral-dark-50: #0f172a;
+  --color-awake-neutral-dark-100: #1e293b;
+  --color-awake-neutral-dark-200: #334155;
+  --color-awake-neutral-dark-300: #475569;
+  --color-awake-neutral-dark-400: #64748b;
+  --color-awake-neutral-dark-500: #94a3b8;
+  --color-awake-neutral-dark-600: #cbd5e1;
+  --color-awake-neutral-dark-700: #e2e8f0;
+  --color-awake-neutral-dark-800: #f1f5f9;
+  --color-awake-neutral-dark-900: #f8fafc;
+
   /* Semânticas */
   --color-awake-success: #16a34a;
   --color-awake-error: #dc2626;
   --color-awake-warning: #d97706;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-awake-neutral-50: #0f172a;
+    --color-awake-neutral-100: #1e293b;
+    --color-awake-neutral-200: #334155;
+    --color-awake-neutral-300: #475569;
+    --color-awake-neutral-400: #64748b;
+    --color-awake-neutral-500: #94a3b8;
+    --color-awake-neutral-600: #cbd5e1;
+    --color-awake-neutral-700: #e2e8f0;
+    --color-awake-neutral-800: #f1f5f9;
+    --color-awake-neutral-900: #f8fafc;
+  }
 }

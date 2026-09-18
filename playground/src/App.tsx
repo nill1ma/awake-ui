@@ -2,18 +2,20 @@ import { Button } from 'awake-ui/button';
 import { Dialog } from 'awake-ui/dialog';
 import { Field } from 'awake-ui/field';
 import { Pagination } from 'awake-ui/pagination';
-import * as Table from 'awake-ui/table';
-import { Separator } from 'awake-ui/separator';
 import { Select } from 'awake-ui/select';
-import 'awake-ui/style.css'; 
-import './App.css';
+import { Separator } from 'awake-ui/separator';
+import 'awake-ui/style.css';
+import * as Table from 'awake-ui/table';
+import { Toggle } from 'awake-ui/toggle';
 import { useState } from 'react';
+import './App.css';
 
 function App() {
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [toggleChecked, setToggleChecked] = useState(false);
   return (
-    <>
+    <div style={{display: 'flex', flexDirection: 'column', gap: '16px', backgroundColor: 'black'}}>
     <Table.Root style={{width:'50%', border: '1px solid black'}}>
       <Table.Head>
         <Table.Row>
@@ -101,7 +103,10 @@ function App() {
     </Select.Positioner>
   </Select.Portal>
 </Select.Root>
-    </>
+
+<Toggle checked={toggleChecked} onCheckedChange={setToggleChecked} />
+
+    </div>
   )
 }
 
