@@ -16,6 +16,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    /* Path aliases - modern approach without baseUrl */
+    "paths": {
+      "@developmentsnil/awake-ui/*": ["../dist/*"]
+    },
+
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,

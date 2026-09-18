@@ -14,6 +14,30 @@ Import the CSS once in your application root:
 import '@developmentsnil/awake-ui/style.css';
 ```
 
+## Dark Mode
+
+This design system provides both light and dark mode color palettes, but the theme control is left to the implementing application. To enable dark mode, add the `data-theme="dark"` attribute to a parent element:
+
+```tsx
+// Enable dark mode
+<html data-theme="dark">
+  {/* your app */}
+</html>
+
+// Or toggle dynamically
+function App() {
+  const [isDark, setIsDark] = useState(false);
+  
+  return (
+    <div data-theme={isDark ? 'dark' : 'light'}>
+      {/* your components */}
+    </div>
+  );
+}
+```
+
+The components will automatically use the appropriate colors based on the `data-theme` attribute.
+
 ### Button
 
 ```tsx
@@ -214,4 +238,23 @@ import { Select } from '@developmentsnil/awake-ui/select';
     </Select.Positioner>
   </Select.Portal>
 </Select.Root>
+```
+
+### Switch
+
+```tsx
+import { Switch } from '@developmentsnil/awake-ui/switch';
+
+<Switch
+  checked={false}
+  onCheckedChange={(checked) => console.log(checked)}
+/>
+```
+
+### Loading
+
+```tsx
+import { Loading } from '@developmentsnil/awake-ui/loading';
+
+<Loading />
 ```

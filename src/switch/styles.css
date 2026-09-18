@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+.toggle-switch {
+  @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ease-in-out cursor-pointer;
+  background-color: var(--awake-toggle-bg, var(--color-awake-neutral-300));
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-awake-primary-500;
+}
+
+.toggle-switch--checked {
+  background-color: var(--awake-toggle-checked-bg, var(--color-awake-primary-500));
+}
+
+.toggle-switch--disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.toggle-switch-thumb {
+  @apply inline-block h-4 w-4 transform rounded-full bg-white shadow transition-transform duration-200 ease-in-out;
+  @apply translate-x-1;
+}
+
+.toggle-switch--checked .toggle-switch-thumb {
+  @apply translate-x-6;
+}
+
+.switch-root {
+  @apply flex h-5 w-9 shrink-0 border p-0.5 transition-colors duration-150 ease-[ease] focus-visible:outline-2 focus-visible:outline-offset-2;
+  background-color: var(--awake-switch-bg, white);
+  border-color: var(--awake-switch-border, var(--color-awake-neutral-950));
+  @apply focus-visible:outline-neutral-950;
+}
+
+.switch-root[data-checked="true"] {
+  background-color: var(--awake-switch-checked-bg, var(--color-awake-neutral-950));
+}
+
+.switch-thumb {
+  @apply size-3.5 transition-[translate,background-color] duration-150 ease-[ease];
+  background-color: var(--awake-switch-thumb-bg, var(--color-awake-neutral-950));
+}
+
+.switch-thumb[data-checked="true"] {
+  @apply translate-x-4;
+  background-color: var(--awake-switch-thumb-checked-bg, white);
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .toggle-switch {
+  --awake-toggle-bg: var(--color-awake-neutral-dark-600);
+}
+
+[data-theme="dark"] .switch-root {
+  --awake-switch-bg: var(--color-awake-neutral-dark-900);
+  --awake-switch-border: var(--color-awake-neutral-dark-50);
+  --awake-switch-checked-bg: var(--color-awake-neutral-dark-50);
+  --awake-switch-thumb-bg: var(--color-awake-neutral-dark-50);
+  --awake-switch-thumb-checked-bg: var(--color-awake-neutral-dark-900);
+  @apply focus-visible:outline-white;
+}

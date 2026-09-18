@@ -4,18 +4,25 @@ import { Field } from 'awake-ui/field';
 import { Pagination } from 'awake-ui/pagination';
 import { Select } from 'awake-ui/select';
 import { Separator } from 'awake-ui/separator';
-import 'awake-ui/style.css';
+import { Switch } from 'awake-ui/switch';
+import { Loading } from 'awake-ui/loading';
 import * as Table from 'awake-ui/table';
-import { Toggle } from 'awake-ui/toggle';
+import 'awake-ui/style.css';
 import { useState } from 'react';
 import './App.css';
 
 function App() {
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [toggleChecked, setToggleChecked] = useState(false);
+  const [switchChecked, setSwitchChecked] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   return (
-    <div style={{display: 'flex', flexDirection: 'column', gap: '16px', backgroundColor: 'black'}}>
+    <div data-theme={isDark ? 'dark' : 'light'} style={{display: 'flex', flexDirection: 'column', gap: '16px', padding: '20px', backgroundColor: isDark ? '#0f172a' : '#f8fafc', minHeight: '100vh'}}>
+      <div style={{display: 'flex', gap: '16px', marginBottom: '20px'}}>
+        <Button onClick={() => setIsDark(!isDark)} variant="secondary">
+          {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
+        </Button>
+      </div>
     <Table.Root style={{width:'50%', border: '1px solid black'}}>
       <Table.Head>
         <Table.Row>
@@ -30,7 +37,7 @@ function App() {
         </Table.Row>
       </Table.Body>
     </Table.Root>
-    <Pagination currentPage={currentPage} totalPages={10} onPageChange={(page) => setCurrentPage(page)} />
+    <Pagination currentPage={currentPage} totalPages={10} onPageChange={(page: number) => setCurrentPage(page)} />
     <Dialog.Root>
       <Dialog.Trigger>Abrir</Dialog.Trigger>
       <Dialog.Portal>
@@ -104,7 +111,9 @@ function App() {
   </Select.Portal>
 </Select.Root>
 
-<Toggle checked={toggleChecked} onCheckedChange={setToggleChecked} />
+<Switch checked={switchChecked} onCheckedChange={setSwitchChecked} />
+
+<Loading />
 
     </div>
   )

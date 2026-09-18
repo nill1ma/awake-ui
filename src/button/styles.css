@@ -7,9 +7,26 @@
 }
 
 .awake-button--primary {
-  @apply bg-awake-primary-500 hover:bg-awake-primary-600 text-white;
+  background-color: var(--awake-primary-bg, var(--color-awake-primary-500));
+  color: var(--awake-primary-text, white);
+}
+
+.awake-button--primary:hover {
+  background-color: var(--awake-primary-hover, var(--color-awake-primary-600));
 }
 
 .awake-button--secondary {
-  @apply bg-awake-neutral-200 hover:bg-awake-neutral-300 text-awake-neutral-900;
+  background-color: var(--awake-secondary-bg, var(--color-awake-neutral-200));
+  color: var(--awake-secondary-text, var(--color-awake-neutral-900));
+}
+
+.awake-button--secondary:hover {
+  background-color: var(--awake-secondary-hover, var(--color-awake-neutral-300));
+}
+
+/* Dark mode styles - aplicado quando [data-theme="dark"] está no ancestor */
+[data-theme="dark"] .awake-button--secondary {
+  --awake-secondary-bg: var(--color-awake-neutral-dark-700);
+  --awake-secondary-text: var(--color-awake-neutral-dark-50);
+  --awake-secondary-hover: var(--color-awake-neutral-dark-600);
 }

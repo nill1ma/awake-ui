@@ -1,0 +1,30 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as SwitchStories from './switch.stories';
+
+<Meta of={SwitchStories} />
+
+# Switch
+
+Component for creating toggle buttons with support for checked and disabled states.
+
+## Basic Usage
+
+```tsx
+import { Switch } from '@developmentsnil/awake-ui/switch';
+import '@developmentsnil/awake-ui/style.css';
+
+<Switch
+  checked={false}
+  onCheckedChange={(checked) => console.log(checked)}
+/>
+```
+
+<Canvas of={SwitchStories.Default} />
+
+## Props
+
+- `checked` - Switch state (boolean)
+- `onCheckedChange` - Callback when state changes
+- `disabled` - Disables the switch
+
+<Controls />

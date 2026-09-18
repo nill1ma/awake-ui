@@ -1,22 +1,28 @@
 @import "tailwindcss";
 
 .select-label {
-  @apply block text-sm font-medium text-awake-neutral-700 mb-1;
+  @apply block text-sm font-medium mb-1;
+  color: var(--awake-label-color, var(--color-awake-neutral-700));
 }
 
 .select-trigger {
-  @apply flex items-center justify-between w-full px-3 py-2 bg-white border border-awake-neutral-300 rounded-md shadow-sm;
+  @apply flex items-center justify-between w-full px-3 py-2 rounded-md shadow-sm transition-colors cursor-pointer;
+  background-color: var(--awake-trigger-bg, white);
+  border-color: var(--awake-trigger-border, var(--color-awake-neutral-300));
   @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-awake-primary-500;
-  @apply hover:border-awake-neutral-400 transition-colors;
-  @apply cursor-pointer;
+}
+
+.select-trigger:hover {
+  border-color: var(--awake-trigger-hover-border, var(--color-awake-neutral-400));
 }
 
 .select-value {
-  @apply text-awake-neutral-900;
+  color: var(--awake-value-color, var(--color-awake-neutral-900));
 }
 
 .select-icon {
-  @apply ml-2 text-awake-neutral-500 pointer-events-none;
+  @apply ml-2 pointer-events-none;
+  color: var(--awake-icon-color, var(--color-awake-neutral-500));
 }
 
 .select-positioner {
@@ -24,8 +30,9 @@
 }
 
 .select-popup {
-  @apply bg-white border border-awake-neutral-200 rounded-md shadow-lg;
-  @apply min-w-[200px] max-h-60 overflow-auto;
+  @apply border rounded-md shadow-lg min-w-[200px] max-h-60 overflow-auto;
+  background-color: var(--awake-popup-bg, white);
+  border-color: var(--awake-popup-border, var(--color-awake-neutral-200));
 }
 
 .select-list {
@@ -33,36 +40,50 @@
 }
 
 .select-item {
-  @apply px-3 py-2 text-sm cursor-pointer;
-  @apply hover:bg-awake-primary-50 hover:text-awake-primary-700;
-  @apply focus-visible:bg-awake-primary-50 focus-visible:text-awake-primary-700 focus-visible:outline-none;
-  @apply transition-colors;
+  @apply px-3 py-2 text-sm cursor-pointer transition-colors;
+  color: var(--awake-item-color, var(--color-awake-neutral-900));
+  @apply focus-visible:outline-none;
+}
+
+.select-item:hover {
+  background-color: var(--awake-item-hover-bg, var(--color-awake-primary-50));
+  color: var(--awake-item-hover-text, var(--color-awake-primary-700));
+}
+
+.select-item:focus-visible {
+  background-color: var(--awake-item-focus-bg, var(--color-awake-primary-50));
+  color: var(--awake-item-focus-text, var(--color-awake-primary-700));
 }
 
 .select-item-text {
-  @apply text-awake-neutral-900;
+  color: var(--awake-item-text-color, var(--color-awake-neutral-900));
 }
 
 .select-item-indicator {
-  @apply text-awake-primary-600;
+  color: var(--awake-indicator-color, var(--color-awake-primary-600));
 }
 
 .select-backdrop {
-  @apply fixed inset-0 bg-black/50 z-40;
+  @apply fixed inset-0 z-40;
+  background-color: var(--awake-backdrop-bg, rgba(0, 0, 0, 0.5));
 }
 
 .select-arrow {
-  @apply text-awake-neutral-400;
+  color: var(--awake-arrow-color, var(--color-awake-neutral-400));
 }
 
 .select-scroll-arrow {
-  @apply flex items-center justify-center py-1 cursor-pointer;
-  @apply hover:bg-awake-neutral-100 transition-colors;
-  @apply text-awake-neutral-500;
+  @apply flex items-center justify-center py-1 cursor-pointer transition-colors;
+  color: var(--awake-scroll-arrow-color, var(--color-awake-neutral-500));
+}
+
+.select-scroll-arrow:hover {
+  background-color: var(--awake-scroll-arrow-hover-bg, var(--color-awake-neutral-100));
 }
 
 .select-separator {
-  @apply my-1 border-t border-awake-neutral-200;
+  @apply my-1 border-t;
+  border-color: var(--awake-separator-color, var(--color-awake-neutral-200));
 }
 
 .select-group {
@@ -70,5 +91,42 @@
 }
 
 .select-group-label {
-  @apply px-3 py-2 text-xs font-semibold text-awake-neutral-500 uppercase tracking-wider;
+  @apply px-3 py-2 text-xs font-semibold uppercase tracking-wider;
+  color: var(--awake-group-label-color, var(--color-awake-neutral-500));
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .select-trigger {
+  --awake-trigger-bg: var(--color-awake-neutral-dark-800);
+  --awake-trigger-border: var(--color-awake-neutral-dark-600);
+  --awake-trigger-hover-border: var(--color-awake-neutral-dark-500);
+}
+
+[data-theme="dark"] .select-value {
+  --awake-value-color: var(--color-awake-neutral-dark-50);
+}
+
+[data-theme="dark"] .select-icon {
+  --awake-icon-color: var(--color-awake-neutral-dark-400);
+}
+
+[data-theme="dark"] .select-popup {
+  --awake-popup-bg: var(--color-awake-neutral-dark-800);
+  --awake-popup-border: var(--color-awake-neutral-dark-600);
+}
+
+[data-theme="dark"] .select-item {
+  --awake-item-color: var(--color-awake-neutral-dark-50);
+}
+
+[data-theme="dark"] .select-item-text {
+  --awake-item-text-color: var(--color-awake-neutral-dark-50);
+}
+
+[data-theme="dark"] .select-separator {
+  --awake-separator-color: var(--color-awake-neutral-dark-600);
+}
+
+[data-theme="dark"] .select-group-label {
+  --awake-group-label-color: var(--color-awake-neutral-dark-400);
 }

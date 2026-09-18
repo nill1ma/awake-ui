@@ -8,7 +8,8 @@
 @import "./separator/styles.css";
 @import "./table/styles.css";
 @import "./select/styles.css";
-@import "./toggle/styles.css";
+@import "./switch/styles.css";
+@import "./loading/styles.css";
 
 
 

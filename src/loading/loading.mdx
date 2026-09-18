@@ -1,0 +1,25 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as LoadingStories from './loading.stories';
+
+<Meta of={LoadingStories} />
+
+# Loading
+
+Component for displaying a loading indicator with animated dots.
+
+## Basic Usage
+
+```tsx
+import { Loading } from '@developmentsnil/awake-ui/loading';
+import '@developmentsnil/awake-ui/style.css';
+
+<Loading />
+```
+
+<Canvas of={LoadingStories.Default} />
+
+## Props
+
+The Loading component doesn't require any props and renders a default loading animation.
+
+<Controls />
