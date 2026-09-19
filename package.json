@@ -1,6 +1,6 @@
 {
   "name": "@developmentsnil/awake-ui",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "publishConfig": {
     "access": "public"
   },
@@ -61,6 +61,11 @@
       "types": "./dist/tooltip.d.ts",
       "import": "./dist/tooltip.js",
       "require": "./dist/tooltip.cjs"
+    },
+    "./alert": {
+      "types": "./dist/alert.d.ts",
+      "import": "./dist/alert.js",
+      "require": "./dist/alert.cjs"
     },
     "./style.css": "./dist/style.css"
   },

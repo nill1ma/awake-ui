@@ -11,7 +11,8 @@ export default defineConfig({
     select: 'src/select/index.tsx',
     switch: 'src/switch/index.tsx',
     loading: 'src/loading/index.tsx',
-    tooltip: 'src/tooltip/index.tsx'
+    tooltip: 'src/tooltip/index.tsx',
+    alert: 'src/alert/index.tsx'
   },
   format: ['cjs', 'esm'],
   dts: true,
