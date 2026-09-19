@@ -6,5 +6,5 @@ type AlertProps = {
 }
 
 export function Alert({ children, variant = 'info' }: AlertProps) {
-    return <div className={`alert alert-${variant}`}>{children}</div>
+    return <div className={`alert alert--${variant}`}>{children}</div>
 }

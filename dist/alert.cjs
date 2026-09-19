@@ -25,7 +25,7 @@ __export(alert_exports, {
 module.exports = __toCommonJS(alert_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 function Alert({ children, variant = "info" }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: `alert alert-${variant}`, children });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: `alert alert--${variant}`, children });
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
