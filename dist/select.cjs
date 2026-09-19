@@ -31,58 +31,58 @@ function Root(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Root, { ...props });
 }
 function Label(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Label, { ...props, className: (0, import_clsx.clsx)("select-label", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Label, { ...props, className: (0, import_clsx.clsx)("awake-select-label", props.className) });
 }
 function Trigger(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Trigger, { ...props, className: (0, import_clsx.clsx)("select-trigger", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Trigger, { ...props, className: (0, import_clsx.clsx)("awake-select-trigger", props.className) });
 }
 function Value(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Value, { ...props, className: (0, import_clsx.clsx)("select-value", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Value, { ...props, className: (0, import_clsx.clsx)("awake-select-value", props.className) });
 }
 function Icon(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Icon, { ...props, className: (0, import_clsx.clsx)("select-icon", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Icon, { ...props, className: (0, import_clsx.clsx)("awake-select-icon", props.className) });
 }
 function Portal(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Portal, { ...props });
 }
 function Positioner(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Positioner, { ...props, className: (0, import_clsx.clsx)("select-positioner", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Positioner, { ...props, className: (0, import_clsx.clsx)("awake-select-positioner", props.className) });
 }
 function Popup(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Popup, { ...props, className: (0, import_clsx.clsx)("select-popup", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Popup, { ...props, className: (0, import_clsx.clsx)("awake-select-popup", props.className) });
 }
 function List(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.List, { ...props, className: (0, import_clsx.clsx)("select-list", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.List, { ...props, className: (0, import_clsx.clsx)("awake-select-list", props.className) });
 }
 function Item(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Item, { ...props, className: (0, import_clsx.clsx)("select-item", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Item, { ...props, className: (0, import_clsx.clsx)("awake-select-item", props.className) });
 }
 function ItemText(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ItemText, { ...props, className: (0, import_clsx.clsx)("select-item-text", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ItemText, { ...props, className: (0, import_clsx.clsx)("awake-select-item-text", props.className) });
 }
 function ItemIndicator(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ItemIndicator, { ...props, className: (0, import_clsx.clsx)("select-item-indicator", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ItemIndicator, { ...props, className: (0, import_clsx.clsx)("awake-select-item-indicator", props.className) });
 }
 function Backdrop(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Backdrop, { ...props, className: (0, import_clsx.clsx)("select-backdrop", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Backdrop, { ...props, className: (0, import_clsx.clsx)("awake-select-backdrop", props.className) });
 }
 function Arrow(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Arrow, { ...props, className: (0, import_clsx.clsx)("select-arrow", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Arrow, { ...props, className: (0, import_clsx.clsx)("awake-select-arrow", props.className) });
 }
 function ScrollUpArrow(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ScrollUpArrow, { ...props, className: (0, import_clsx.clsx)("select-scroll-arrow", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ScrollUpArrow, { ...props, className: (0, import_clsx.clsx)("awake-select-scroll-arrow", props.className) });
 }
 function ScrollDownArrow(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ScrollDownArrow, { ...props, className: (0, import_clsx.clsx)("select-scroll-arrow", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.ScrollDownArrow, { ...props, className: (0, import_clsx.clsx)("awake-select-scroll-arrow", props.className) });
 }
 function Separator(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Separator, { ...props, className: (0, import_clsx.clsx)("select-separator", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Separator, { ...props, className: (0, import_clsx.clsx)("awake-select-separator", props.className) });
 }
 function Group(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Group, { ...props, className: (0, import_clsx.clsx)("select-group", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.Group, { ...props, className: (0, import_clsx.clsx)("awake-select-group", props.className) });
 }
 function GroupLabel(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.GroupLabel, { ...props, className: (0, import_clsx.clsx)("select-group-label", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_select.Select.GroupLabel, { ...props, className: (0, import_clsx.clsx)("awake-select-group-label", props.className) });
 }
 var Select = {
   Root,

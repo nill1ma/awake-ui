@@ -31,41 +31,32 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/table/index.tsx
 var table_exports = {};
 __export(table_exports, {
-  Body: () => Body,
-  Cell: () => Cell,
-  Head: () => Head,
-  HeaderCell: () => HeaderCell,
-  Root: () => Root,
-  Row: () => Row
+  Table: () => Table
 });
 module.exports = __toCommonJS(table_exports);
 var import_clsx = __toESM(require("clsx"), 1);
 var import_jsx_runtime = require("react/jsx-runtime");
 function Root({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "table-wrapper", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("table", { className: (0, import_clsx.default)("awake-table", className), ...props }) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "awake-table-wrapper", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("table", { className: (0, import_clsx.default)("awake-table", className), ...props }) });
 }
 function Head({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { className: (0, import_clsx.default)("table-head", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("thead", { className: (0, import_clsx.default)("awake-table-head", className), ...props });
 }
 function Body({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tbody", { className: (0, import_clsx.default)("table-body", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tbody", { className: (0, import_clsx.default)("awake-table-body", className), ...props });
 }
 function Row({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tr", { className: (0, import_clsx.default)("table-row", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tr", { className: (0, import_clsx.default)("awake-table-row", className), ...props });
 }
 function HeaderCell({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", { className: (0, import_clsx.default)("table-header-cell", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("th", { className: (0, import_clsx.default)("awake-table-header-cell", className), ...props });
 }
 function Cell({ className, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", { className: (0, import_clsx.default)("table-cell", className), ...props });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("td", { className: (0, import_clsx.default)("awake-table-cell", className), ...props });
 }
+var Table = { Root, Head, Body, Row, HeaderCell, Cell };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Body,
-  Cell,
-  Head,
-  HeaderCell,
-  Root,
-  Row
+  Table
 });
 //# sourceMappingURL=table.cjs.map

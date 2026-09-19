@@ -11,19 +11,19 @@ function Root(props) {
   return /* @__PURE__ */ jsx(BaseUITooltip.Root, { ...props });
 }
 function Trigger(props) {
-  return /* @__PURE__ */ jsx(BaseUITooltip.Trigger, { ...props, className: clsx("tooltip-trigger", props.className) });
+  return /* @__PURE__ */ jsx(BaseUITooltip.Trigger, { ...props, className: clsx("awake-tooltip-trigger", props.className) });
 }
 function Positioner(props) {
-  return /* @__PURE__ */ jsx(BaseUITooltip.Positioner, { ...props, className: clsx("tooltip-positioner", props.className) });
+  return /* @__PURE__ */ jsx(BaseUITooltip.Positioner, { ...props, className: clsx("awake-tooltip-positioner", props.className) });
 }
 function Portal(props) {
   return /* @__PURE__ */ jsx(BaseUITooltip.Portal, { ...props });
 }
 function Popup(props) {
-  return /* @__PURE__ */ jsx(BaseUITooltip.Popup, { ...props, className: clsx("tooltip-popup", props.className) });
+  return /* @__PURE__ */ jsx(BaseUITooltip.Popup, { ...props, className: clsx("awake-tooltip-popup", props.className) });
 }
 function Arrow(props) {
-  return /* @__PURE__ */ jsx(BaseUITooltip.Arrow, { ...props, className: clsx("tooltip-arrow", props.className) });
+  return /* @__PURE__ */ jsx(BaseUITooltip.Arrow, { ...props, className: clsx("awake-tooltip-arrow", props.className) });
 }
 function Viewport(props) {
   return /* @__PURE__ */ jsx(BaseUITooltip.Viewport, { ...props });

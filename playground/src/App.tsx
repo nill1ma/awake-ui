@@ -1,13 +1,13 @@
 import { Button } from 'awake-ui/button';
 import { Dialog } from 'awake-ui/dialog';
 import { Field } from 'awake-ui/field';
+import { Loading } from 'awake-ui/loading';
 import { Pagination } from 'awake-ui/pagination';
 import { Select } from 'awake-ui/select';
 import { Separator } from 'awake-ui/separator';
-import { Switch } from 'awake-ui/switch';
-import { Loading } from 'awake-ui/loading';
-import * as Table from 'awake-ui/table';
 import 'awake-ui/style.css';
+import { Switch } from 'awake-ui/switch';
+import { Table } from 'awake-ui/table';
 import { useState } from 'react';
 import './App.css';
 
@@ -15,6 +15,11 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [switchChecked, setSwitchChecked] = useState(false);
+
+  const handleSwitch = () => {
+    console.log('Switch toggled action is coming here');
+    setSwitchChecked(!switchChecked);
+  }
   const [isDark, setIsDark] = useState(true);
   return (
     <div data-theme={isDark ? 'dark' : 'light'} style={{display: 'flex', flexDirection: 'column', gap: '16px', padding: '20px', backgroundColor: isDark ? '#0f172a' : '#f8fafc', minHeight: '100vh'}}>
@@ -111,7 +116,7 @@ function App() {
   </Select.Portal>
 </Select.Root>
 
-<Switch checked={switchChecked} onCheckedChange={setSwitchChecked} />
+<Switch className='cursor-pointer!' checked={switchChecked} onCheckedChange={() => setIsDark(!isDark)} />
 
 <Loading />
 

@@ -7,5 +7,13 @@ declare function Body({ className, ...props }: ComponentPropsWithoutRef<'tbody'>
 declare function Row({ className, ...props }: ComponentPropsWithoutRef<'tr'>): react.JSX.Element;
 declare function HeaderCell({ className, ...props }: ComponentPropsWithoutRef<'th'>): react.JSX.Element;
 declare function Cell({ className, ...props }: ComponentPropsWithoutRef<'td'>): react.JSX.Element;
+declare const Table: {
+    Root: typeof Root;
+    Head: typeof Head;
+    Body: typeof Body;
+    Row: typeof Row;
+    HeaderCell: typeof HeaderCell;
+    Cell: typeof Cell;
+};
 
-export { Body, Cell, Head, HeaderCell, Root, Row };
+export { Table };

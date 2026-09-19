@@ -26,10 +26,10 @@ module.exports = __toCommonJS(loading_exports);
 var import_clsx = require("clsx");
 var import_jsx_runtime = require("react/jsx-runtime");
 function Loading() {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: (0, import_clsx.clsx)("loading-container"), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: (0, import_clsx.clsx)("loading-dots"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: (0, import_clsx.clsx)("dot") }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: (0, import_clsx.clsx)("dot") }),
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: (0, import_clsx.clsx)("dot") })
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: (0, import_clsx.clsx)("awake-loading-container"), children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: (0, import_clsx.clsx)("awake-loading-dots"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: (0, import_clsx.clsx)("awake-loading-dot") }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: (0, import_clsx.clsx)("awake-loading-dot") }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: (0, import_clsx.clsx)("awake-loading-dot") })
   ] }) });
 }
 // Annotate the CommonJS export names for ESM import in node:

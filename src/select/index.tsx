@@ -9,19 +9,19 @@ function Root(props: ComponentProps<typeof BaseUISelect.Root>) {
 }
 
 function Label(props: ComponentProps<typeof BaseUISelect.Label>) {
-  return <BaseUISelect.Label {...props} className={clsx('select-label', props.className)} />;
+  return <BaseUISelect.Label {...props} className={clsx('awake-select-label', props.className)} />;
 }
 
 function Trigger(props: ComponentProps<typeof BaseUISelect.Trigger>) {
-  return <BaseUISelect.Trigger {...props} className={clsx('select-trigger', props.className)} />;
+  return <BaseUISelect.Trigger {...props} className={clsx('awake-select-trigger', props.className)} />;
 }
 
 function Value(props: ComponentProps<typeof BaseUISelect.Value>) {
-  return <BaseUISelect.Value {...props} className={clsx('select-value', props.className)} />;
+  return <BaseUISelect.Value {...props} className={clsx('awake-select-value', props.className)} />;
 }
 
 function Icon(props: ComponentProps<typeof BaseUISelect.Icon>) {
-  return <BaseUISelect.Icon {...props} className={clsx('select-icon', props.className)} />;
+  return <BaseUISelect.Icon {...props} className={clsx('awake-select-icon', props.className)} />;
 }
 
 function Portal(props: ComponentProps<typeof BaseUISelect.Portal>) {
@@ -29,55 +29,55 @@ function Portal(props: ComponentProps<typeof BaseUISelect.Portal>) {
 }
 
 function Positioner(props: ComponentProps<typeof BaseUISelect.Positioner>) {
-  return <BaseUISelect.Positioner {...props} className={clsx('select-positioner', props.className)} />;
+  return <BaseUISelect.Positioner {...props} className={clsx('awake-select-positioner', props.className)} />;
 }
 
 function Popup(props: ComponentProps<typeof BaseUISelect.Popup>) {
-  return <BaseUISelect.Popup {...props} className={clsx('select-popup', props.className)} />;
+  return <BaseUISelect.Popup {...props} className={clsx('awake-select-popup', props.className)} />;
 }
 
 function List(props: ComponentProps<typeof BaseUISelect.List>) {
-  return <BaseUISelect.List {...props} className={clsx('select-list', props.className)} />;
+  return <BaseUISelect.List {...props} className={clsx('awake-select-list', props.className)} />;
 }
 
 function Item(props: ComponentProps<typeof BaseUISelect.Item>) {
-  return <BaseUISelect.Item {...props} className={clsx('select-item', props.className)} />;
+  return <BaseUISelect.Item {...props} className={clsx('awake-select-item', props.className)} />;
 }
 
 function ItemText(props: ComponentProps<typeof BaseUISelect.ItemText>) {
-  return <BaseUISelect.ItemText {...props} className={clsx('select-item-text', props.className)} />;
+  return <BaseUISelect.ItemText {...props} className={clsx('awake-select-item-text', props.className)} />;
 }
 
 function ItemIndicator(props: ComponentProps<typeof BaseUISelect.ItemIndicator>) {
-  return <BaseUISelect.ItemIndicator {...props} className={clsx('select-item-indicator', props.className)} />;
+  return <BaseUISelect.ItemIndicator {...props} className={clsx('awake-select-item-indicator', props.className)} />;
 }
 
 function Backdrop(props: ComponentProps<typeof BaseUISelect.Backdrop>) {
-  return <BaseUISelect.Backdrop {...props} className={clsx('select-backdrop', props.className)} />;
+  return <BaseUISelect.Backdrop {...props} className={clsx('awake-select-backdrop', props.className)} />;
 }
 
 function Arrow(props: ComponentProps<typeof BaseUISelect.Arrow>) {
-  return <BaseUISelect.Arrow {...props} className={clsx('select-arrow', props.className)} />;
+  return <BaseUISelect.Arrow {...props} className={clsx('awake-select-arrow', props.className)} />;
 }
 
 function ScrollUpArrow(props: ComponentProps<typeof BaseUISelect.ScrollUpArrow>) {
-  return <BaseUISelect.ScrollUpArrow {...props} className={clsx('select-scroll-arrow', props.className)} />;
+  return <BaseUISelect.ScrollUpArrow {...props} className={clsx('awake-select-scroll-arrow', props.className)} />;
 }
 
 function ScrollDownArrow(props: ComponentProps<typeof BaseUISelect.ScrollDownArrow>) {
-  return <BaseUISelect.ScrollDownArrow {...props} className={clsx('select-scroll-arrow', props.className)} />;
+  return <BaseUISelect.ScrollDownArrow {...props} className={clsx('awake-select-scroll-arrow', props.className)} />;
 }
 
 function Separator(props: ComponentProps<typeof BaseUISelect.Separator>) {
-  return <BaseUISelect.Separator {...props} className={clsx('select-separator', props.className)} />;
+  return <BaseUISelect.Separator {...props} className={clsx('awake-select-separator', props.className)} />;
 }
 
 function Group(props: ComponentProps<typeof BaseUISelect.Group>) {
-  return <BaseUISelect.Group {...props} className={clsx('select-group', props.className)} />;
+  return <BaseUISelect.Group {...props} className={clsx('awake-select-group', props.className)} />;
 }
 
 function GroupLabel(props: ComponentProps<typeof BaseUISelect.GroupLabel>) {
-  return <BaseUISelect.GroupLabel {...props} className={clsx('select-group-label', props.className)} />;
+  return <BaseUISelect.GroupLabel {...props} className={clsx('awake-select-group-label', props.className)} />;
 }
 
 export const Select = {

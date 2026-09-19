@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Root, Head, Body, Row, HeaderCell, Cell } from './index';
+import { Table } from './index';
 
 const meta: Meta = {
   title: 'Components/Table',
@@ -10,19 +10,19 @@ type Story = StoryObj;
 
 export const Default: Story = {
   render: () => (
-    <Root>
-      <Head>
-        <Row>
-          <HeaderCell>Nome</HeaderCell>
-          <HeaderCell>Email</HeaderCell>
-        </Row>
-      </Head>
-      <Body>
-        <Row>
-          <Cell>John Doe</Cell>
-          <Cell>john.doe@example.com</Cell>
-        </Row>
-      </Body>
-    </Root>
+    <Table.Root>
+      <Table.Head>
+        <Table.Row>
+          <Table.HeaderCell>Nome</Table.HeaderCell>
+          <Table.HeaderCell>Email</Table.HeaderCell>
+        </Table.Row>
+      </Table.Head>
+      <Table.Body>
+        <Table.Row>
+          <Table.Cell>John Doe</Table.Cell>
+          <Table.Cell>john.doe@example.com</Table.Cell>
+        </Table.Row>
+      </Table.Body>
+    </Table.Root>
   ),
 };

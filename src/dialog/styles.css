@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 .awake-dialog-trigger {
   @apply px-4 py-2 rounded-md font-medium transition-colors;
   @apply bg-awake-primary-500 hover:bg-awake-primary-600 text-white;
@@ -14,22 +12,49 @@
 
 .awake-dialog-popup {
   @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
-  @apply bg-white rounded-lg shadow-xl p-6 w-full max-w-md;
+  @apply rounded-lg shadow-xl p-6 w-full max-w-md;
   @apply transition-all duration-150;
   @apply data-[starting-style]:opacity-0 data-[starting-style]:scale-95;
   @apply data-[ending-style]:opacity-0 data-[ending-style]:scale-95;
+  background-color: var(--awake-dialog-popup-bg, white);
 }
 
 .awake-dialog-title {
-  @apply text-lg font-semibold text-awake-neutral-900 mb-2;
+  @apply text-lg font-semibold mb-2;
+  color: var(--awake-dialog-title-text, var(--color-awake-neutral-900));
 }
 
 .awake-dialog-description {
-  @apply text-sm text-awake-neutral-600 mb-4;
+  @apply text-sm mb-4;
+  color: var(--awake-dialog-description-text, var(--color-awake-neutral-600));
 }
 
 .awake-dialog-close {
   @apply px-4 py-2 rounded-md font-medium transition-colors;
-  @apply bg-awake-neutral-200 hover:bg-awake-neutral-300 text-awake-neutral-900;
+  background-color: var(--awake-dialog-close-bg, var(--color-awake-neutral-200));
+  color: var(--awake-dialog-close-text, var(--color-awake-neutral-900));
   @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-awake-primary-500;
+}
+
+.awake-dialog-close:hover {
+  background-color: var(--awake-dialog-close-hover-bg, var(--color-awake-neutral-300));
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .awake-dialog-popup {
+  --awake-dialog-popup-bg: var(--color-awake-neutral-dark-800);
+}
+
+[data-theme="dark"] .awake-dialog-title {
+  --awake-dialog-title-text: var(--color-awake-neutral-dark-50);
+}
+
+[data-theme="dark"] .awake-dialog-description {
+  --awake-dialog-description-text: var(--color-awake-neutral-dark-400);
+}
+
+[data-theme="dark"] .awake-dialog-close {
+  --awake-dialog-close-bg: var(--color-awake-neutral-dark-700);
+  --awake-dialog-close-text: var(--color-awake-neutral-dark-50);
+  --awake-dialog-close-hover-bg: var(--color-awake-neutral-dark-600);
 }

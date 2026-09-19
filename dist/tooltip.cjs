@@ -34,19 +34,19 @@ function Root(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Root, { ...props });
 }
 function Trigger(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Trigger, { ...props, className: (0, import_clsx.clsx)("tooltip-trigger", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Trigger, { ...props, className: (0, import_clsx.clsx)("awake-tooltip-trigger", props.className) });
 }
 function Positioner(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Positioner, { ...props, className: (0, import_clsx.clsx)("tooltip-positioner", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Positioner, { ...props, className: (0, import_clsx.clsx)("awake-tooltip-positioner", props.className) });
 }
 function Portal(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Portal, { ...props });
 }
 function Popup(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Popup, { ...props, className: (0, import_clsx.clsx)("tooltip-popup", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Popup, { ...props, className: (0, import_clsx.clsx)("awake-tooltip-popup", props.className) });
 }
 function Arrow(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Arrow, { ...props, className: (0, import_clsx.clsx)("tooltip-arrow", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Arrow, { ...props, className: (0, import_clsx.clsx)("awake-tooltip-arrow", props.className) });
 }
 function Viewport(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_tooltip.Tooltip.Viewport, { ...props });

@@ -19,7 +19,7 @@ export function Pagination({
 }: PaginationProps) {
   return (
     <nav
-      aria-label="Paginação"
+      aria-label="Pagination"
       className={clsx('awake-pagination', className)}
       {...props}
     >
@@ -27,7 +27,7 @@ export function Pagination({
         variant="secondary"
         disabled={currentPage <= 1}
         onClick={() => onPageChange(currentPage - 1)}
-        aria-label="Página anterior"
+        aria-label="Previous page"
       >
         Previous
       </Button>
@@ -40,7 +40,7 @@ export function Pagination({
         variant="secondary"
         disabled={currentPage >= totalPages}
         onClick={() => onPageChange(currentPage + 1)}
-        aria-label="Próxima página"
+        aria-label="Next page"
       >
         Next
       </Button>

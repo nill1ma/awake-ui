@@ -1,30 +1,28 @@
-@import "tailwindcss";
-
-.tooltip-trigger {
+.awake-tooltip-trigger {
   @apply inline-block;
 }
 
-.tooltip-positioner {
+.awake-tooltip-positioner {
   @apply z-50;
 }
 
-.tooltip-popup {
+.awake-tooltip-popup {
   @apply px-2 py-1 rounded-md text-sm font-medium shadow-lg;
   background-color: var(--awake-tooltip-bg, var(--color-awake-neutral-900));
   color: var(--awake-tooltip-text, white);
   max-width: 200px;
 }
 
-.tooltip-arrow {
+.awake-tooltip-arrow {
   color: var(--awake-tooltip-bg, var(--color-awake-neutral-900));
 }
 
 /* Dark mode styles */
-[data-theme="dark"] .tooltip-popup {
+[data-theme="dark"] .awake-tooltip-popup {
   --awake-tooltip-bg: var(--color-awake-neutral-dark-50);
   --awake-tooltip-text: var(--color-awake-neutral-dark-900);
 }
 
-[data-theme="dark"] .tooltip-arrow {
+[data-theme="dark"] .awake-tooltip-arrow {
   --awake-tooltip-bg: var(--color-awake-neutral-dark-50);
 }

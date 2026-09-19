@@ -16,7 +16,7 @@ function Pagination({
   return /* @__PURE__ */ jsxs(
     "nav",
     {
-      "aria-label": "Pagina\xE7\xE3o",
+      "aria-label": "Pagination",
       className: clsx("awake-pagination", className),
       ...props,
       children: [
@@ -26,7 +26,7 @@ function Pagination({
             variant: "secondary",
             disabled: currentPage <= 1,
             onClick: () => onPageChange(currentPage - 1),
-            "aria-label": "P\xE1gina anterior",
+            "aria-label": "Previous page",
             children: "Previous"
           }
         ),
@@ -42,7 +42,7 @@ function Pagination({
             variant: "secondary",
             disabled: currentPage >= totalPages,
             onClick: () => onPageChange(currentPage + 1),
-            "aria-label": "Pr\xF3xima p\xE1gina",
+            "aria-label": "Next page",
             children: "Next"
           }
         )

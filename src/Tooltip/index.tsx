@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Tooltip as BaseUITooltip } from '@base-ui/react/tooltip';
 import { clsx } from 'clsx';
@@ -13,11 +13,11 @@ function Root(props: ComponentProps<typeof BaseUITooltip.Root>) {
 }
 
 function Trigger(props: ComponentProps<typeof BaseUITooltip.Trigger>) {
-  return <BaseUITooltip.Trigger {...props} className={clsx('tooltip-trigger', props.className)} />;
+  return <BaseUITooltip.Trigger {...props} className={clsx('awake-tooltip-trigger', props.className)} />;
 }
 
 function Positioner(props: ComponentProps<typeof BaseUITooltip.Positioner>) {
-  return <BaseUITooltip.Positioner {...props} className={clsx('tooltip-positioner', props.className)} />;
+  return <BaseUITooltip.Positioner {...props} className={clsx('awake-tooltip-positioner', props.className)} />;
 }
 
 function Portal(props: ComponentProps<typeof BaseUITooltip.Portal>) {
@@ -25,11 +25,11 @@ function Portal(props: ComponentProps<typeof BaseUITooltip.Portal>) {
 }
 
 function Popup(props: ComponentProps<typeof BaseUITooltip.Popup>) {
-  return <BaseUITooltip.Popup {...props} className={clsx('tooltip-popup', props.className)} />;
+  return <BaseUITooltip.Popup {...props} className={clsx('awake-tooltip-popup', props.className)} />;
 }
 
 function Arrow(props: ComponentProps<typeof BaseUITooltip.Arrow>) {
-  return <BaseUITooltip.Arrow {...props} className={clsx('tooltip-arrow', props.className)} />;
+  return <BaseUITooltip.Arrow {...props} className={clsx('awake-tooltip-arrow', props.className)} />;
 }
 
 function Viewport(props: ComponentProps<typeof BaseUITooltip.Viewport>) {

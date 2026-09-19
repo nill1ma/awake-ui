@@ -1,9 +1,13 @@
-@import 'tailwindcss';
-
 .awake-pagination {
   @apply flex items-center justify-between gap-4 mt-4;
 }
 
 .awake-pagination-info {
-  @apply text-sm text-awake-neutral-600;
+  @apply text-sm;
+  color: var(--awake-pagination-info-text, var(--color-awake-neutral-600));
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .awake-pagination-info {
+  --awake-pagination-info-text: var(--color-awake-neutral-dark-400);
 }

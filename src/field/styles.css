@@ -1,16 +1,29 @@
-@import "tailwindcss";
-
-.field-root {
+.awake-field-root {
   @apply flex flex-col gap-1;
 }
 
-.field-label {
-  @apply text-sm font-medium text-awake-neutral-900;
+.awake-field-label {
+  @apply text-sm font-medium;
+  color: var(--awake-field-label-color, var(--color-awake-neutral-900));
   @apply data-[disabled]:text-awake-neutral-400;
 }
 
-.field-control {
-  @apply h-10 w-full rounded-md border border-awake-neutral-200 px-3.5 text-base text-awake-neutral-900;
+.awake-field-control {
+  @apply h-10 w-full rounded-md border px-3.5 text-base;
+  background-color: var(--awake-field-control-bg, white);
+  border-color: var(--awake-field-control-border, var(--color-awake-neutral-200));
+  color: var(--awake-field-control-text, var(--color-awake-neutral-900));
   @apply focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-awake-primary-500;
   @apply data-[invalid]:border-awake-error data-[invalid]:outline-awake-error;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .awake-field-label {
+  --awake-field-label-color: var(--color-awake-neutral-dark-50);
+}
+
+[data-theme="dark"] .awake-field-control {
+  --awake-field-control-bg: var(--color-awake-neutral-dark-800);
+  --awake-field-control-border: var(--color-awake-neutral-dark-600);
+  --awake-field-control-text: var(--color-awake-neutral-dark-50);
 }

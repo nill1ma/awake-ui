@@ -5,30 +5,30 @@ import clsx from 'clsx';
 
 function Root({ className, ...props }: ComponentPropsWithoutRef<'table'>) {
   return (
-    <div className="table-wrapper">
+    <div className="awake-table-wrapper">
       <table className={clsx('awake-table', className)} {...props} />
     </div>
   );
 }
 
 function Head({ className, ...props }: ComponentPropsWithoutRef<'thead'>) {
-  return <thead className={clsx('table-head', className)} {...props} />;
+  return <thead className={clsx('awake-table-head', className)} {...props} />;
 }
 
 function Body({ className, ...props }: ComponentPropsWithoutRef<'tbody'>) {
-  return <tbody className={clsx('table-body', className)} {...props} />;
+  return <tbody className={clsx('awake-table-body', className)} {...props} />;
 }
 
 function Row({ className, ...props }: ComponentPropsWithoutRef<'tr'>) {
-  return <tr className={clsx('table-row', className)} {...props} />;
+  return <tr className={clsx('awake-table-row', className)} {...props} />;
 }
 
 function HeaderCell({ className, ...props }: ComponentPropsWithoutRef<'th'>) {
-  return <th className={clsx('table-header-cell', className)} {...props} />;
+  return <th className={clsx('awake-table-header-cell', className)} {...props} />;
 }
 
 function Cell({ className, ...props }: ComponentPropsWithoutRef<'td'>) {
-  return <td className={clsx('table-cell', className)} {...props} />;
+  return <td className={clsx('awake-table-cell', className)} {...props} />;
 }
 
-export { Root, Head, Body, Row, HeaderCell, Cell };
+export const Table = { Root, Head, Body, Row, HeaderCell, Cell };

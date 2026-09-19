@@ -28,13 +28,13 @@ var import_field = require("@base-ui/react/field");
 var import_clsx = require("clsx");
 var import_jsx_runtime = require("react/jsx-runtime");
 function Root(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_field.Field.Root, { ...props, className: (0, import_clsx.clsx)("field-root", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_field.Field.Root, { ...props, className: (0, import_clsx.clsx)("awake-field-root", props.className) });
 }
 function Label(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_field.Field.Label, { ...props, className: (0, import_clsx.clsx)("field-label", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_field.Field.Label, { ...props, className: (0, import_clsx.clsx)("awake-field-label", props.className) });
 }
 function Control(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_field.Field.Control, { ...props, className: (0, import_clsx.clsx)("field-control", props.className) });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_field.Field.Control, { ...props, className: (0, import_clsx.clsx)("awake-field-control", props.className) });
 }
 var Field = { Root, Label, Control };
 // Annotate the CommonJS export names for ESM import in node:
