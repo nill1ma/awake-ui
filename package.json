@@ -1,6 +1,9 @@
 {
   "name": "@developmentsnil/awake-ui",
   "version": "0.1.10",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "",
   "sideEffects": false,
   "type": "module",
