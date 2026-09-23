@@ -1,19 +1,53 @@
-.alert {
+@import "tailwindcss";
+
+.awake-alert {
   @apply p-4 rounded-md;
+  background-color: var(--awake-alert-bg, var(--color-awake-neutral-100));
+  color: var(--awake-alert-text, var(--color-awake-neutral-900));
 }
 
-.alert--info {
-  @apply bg-blue-100 text-blue-800;
+.awake-alert--info {
+  background-color: var(--awake-alert-info-bg, #dbeafe);
+  color: var(--awake-alert-info-text, #1e40af);
 }
 
-.alert--success {
-  @apply bg-green-100 text-green-800;
+.awake-alert--success {
+  background-color: var(--awake-alert-success-bg, #dcfce7);
+  color: var(--awake-alert-success-text, #166534);
 }
 
-.alert--warning {
-  @apply bg-yellow-100 text-yellow-800;
+.awake-alert--warning {
+  background-color: var(--awake-alert-warning-bg, #fef3c7);
+  color: var(--awake-alert-warning-text, #92400e);
 }
 
-.alert--error {
-  @apply bg-red-100 text-red-800;
+.awake-alert--error {
+  background-color: var(--awake-alert-error-bg, #fee2e2);
+  color: var(--awake-alert-error-text, #991b1b);
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .awake-alert {
+  --awake-alert-bg: var(--color-awake-neutral-dark-800);
+  --awake-alert-text: var(--color-awake-neutral-dark-50);
+}
+
+[data-theme="dark"] .awake-alert--info {
+  --awake-alert-info-bg: #1e3a5f;
+  --awake-alert-info-text: #93c5fd;
+}
+
+[data-theme="dark"] .awake-alert--success {
+  --awake-alert-success-bg: #14532d;
+  --awake-alert-success-text: #86efac;
+}
+
+[data-theme="dark"] .awake-alert--warning {
+  --awake-alert-warning-bg: #422006;
+  --awake-alert-warning-text: #fde68a;
+}
+
+[data-theme="dark"] .awake-alert--error {
+  --awake-alert-error-bg: #450a0a;
+  --awake-alert-error-text: #fca5a5;
 }

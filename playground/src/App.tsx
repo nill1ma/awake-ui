@@ -57,6 +57,9 @@ function App() {
         <Field.Label>Label</Field.Label>
         <Field.Control type="text" />
       </Field.Root>
+      {/* <Field.Root> */}
+        <Field.Control type="text" placeholder="Type to find" />
+      {/* </Field.Root> */}
       <div style={{ display: 'flex', gap: '16px' }}>
         <Button className='ml-4 w-10 text-cyan-800' variant="primary">Primário</Button>
         <Separator className='awake-separator-custom' orientation='vertical' />
